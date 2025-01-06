@@ -5,7 +5,7 @@ pdf("visualization.pdf")
 df <- read.csv("Suicide Deaths by Age.csv")
 Age <- df$Age
 Suicides <- df$Suicides
-plot(Age,Suicides,main= "Correlation of suicides and age of 18 to 95 ", xlim = c(18,95),col = "lightblue",ylim = c(0,200),xlab = "Ages(18 to 95)")
+plot(Age,Suicides,main= "Relationship between number of suicides and age of 18 to 95 ", xlim = c(18,95),col = "lightblue",ylim = c(0,200),xlab = "Ages(18 to 95)")
 abline(model, col = "blue")
 h = hist(Suicides,main = "Histogram of Suicides", xlab = "Suicides",col = "grey")
 xfit=seq(min(Suicides), max(Suicides) , length = 10)
